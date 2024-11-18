@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 BEGIN:VCARD
 VERSION:3.0
 FN:Алина Бекер
 ORG:Бекер Партнер
 TEL;TYPE=CELL:+79277081314
+=======
+BEGIN:VCARD
+VERSION:3.0
+FN:Алина Бекер
+ORG:Бекер Партнер
+TEL;TYPE=CELL:+79277081314
+>>>>>>> 269c51bc77020816c5fe2bd8575aa0cbbf40ad7e
 END:VCARD
