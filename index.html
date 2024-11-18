@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронная визитка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body-container">
+    <header class="header-selection">
+        <div>
+            <img src="logo.png" alt="Логотип" class="logo">
+        </div>
+        <div class="vcard">
+            <i class="fas fa-user-plus" style="margin-right: 1px; font-size: 12px;"></i>
+            <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:%D0%90%D0%BB%D0%B8%D0%BD%D0%B0%20%D0%91%D0%B5%D0%BA%D0%B5%D1%80%0AORG:%D0%91%D0%B5%D0%BA%D0%B5%D1%80%20%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%0ATEL;TYPE=CELL:+79277081314%0AEND:VCARD"
+            style="text-decoration: none; padding: 12px; font-size: 12px; margin: 0;  color: inherit"> 
+    Добавить в контакты    
+            </a>
+        </div>
+    </header>
+    <main class="main-container">
+        <img src="self-portrait2.png" alt="Красивая фотография" class="self-portrait">
+        <div class="table-content">
+            <h1>
+                Алина Бекер <br> 
+                Юрист, налоговый консультант
+            </h1>
+        </div>
+        <div class="contact-container">
+            <div class="contact-block">
+                <i class= "fas fa-phone-alt"></i>
+                <a href="tel:++79277081314" class="contact-link">
+                    <span>Телефон</span>
+                </a>
+            </div>
+            <div class="contact-block">
+                <i class= "fas fa-envelope"></i>
+                <a href="mailto:aba@beker-partners.ru" class="contact-link">
+                    <span>Почта</span>
+                </a>
+            </div>
+            <div class="contact-block">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/79277081314" class="contact-link" target="_blank">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+            <div class="contact-block">
+                <i class="fa-brands fa-telegram"></i>
+                <a href="https://t.me/a_beker" class="contact-link" target="_blank">
+                    <span>Telegram</span>
+                </a>
+            </div>
+                <div class="services-block">
+                    <h2 class="services-title">Услуги</h2>
+                </div>
+                <div class="modal" id="servicesModal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                            <h2>Список услуг:</h2>
+                            <details>
+                                <summary>Ликвидация компании</summary>
+                                <p>1. Добровольная ликвидация без выездной налоговой проверки с предварительным анализом рисков их устранением.<br>
+                                2. Ликвидация проблемных компаний:<br>
+                                    -С разрывами по НДС<br>
+                                    -С большими оборотами<br>
+                                    -С низкой налоговой нагрузкой<br>
+                                    -С низкой рентабельностью и убытками<br>
+                                    -С показателями резкого снижения доходов<br>
+                                    -Участвующих в цепочках с сомнительными контрагентами<br>
+                                    -С участием иностранного капитала;<br>
+                                3. Помощь в выводе активов, распределении имущества и списании кредиторской задолженности
+                                </p>
+                            </details>
+                            <details>
+                                <summary>Налоговая безопасность</summary>
+                                <p> 1. Сопровождение налоговых проверок<br>
+                                    2. Взаимодействие с налоговыми органами в спорных ситуациях<br>
+                                    3. Оптимизация налоговой нагрузки<br>
+                                    4. Обжалование решений налоговых органов
+                                </p>
+                            </details>
+                            <details>
+                                <summary>Юридическая защита бизнеса</summary>
+                                <p> 1. Договорная работа<br>
+                                    2. Досудебное урегулирование споров, переговоры<br>
+                                    3. Сопровождение сделок<br>
+                                    4. Регистрация компаний и ИП<br>
+                                    5. Изменения в ЕГРЮЛ
+                                </p>
+                            </details>
+                            <details>
+                                <summary>Арбитраж и суды</summary>
+                                <p> 1. Арбитражные споры<br>
+                                    2. Взыскание долгов<br>
+                                    3. Семейное право<br>
+                                    4. Трудовые споры<br>
+                                    5. Недвижимость
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                </div>                
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
