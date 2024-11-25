@@ -35,7 +35,13 @@ body {
     padding: 10px; 
     margin: 0 auto; 
 }
-
+.add-contact-link {
+    text-decoration: none; 
+    padding: 12px;
+    font-size: 12px; 
+    margin: 0; 
+    color: inherit; 
+}
 .main-container {
     display: grid;
     grid-template-columns: 1fr; 
@@ -80,6 +86,8 @@ body {
 }
 
 .contact-link {
+    display: flex;
+    flex-direction: column;
     text-decoration: none; 
     color: inherit;
 }
@@ -102,7 +110,7 @@ body {
 }
 
 .services-title:hover {
-    background-color: #C0B0B1;
+    background-color: #AFAFAF;
 }
 
 .modal {
@@ -126,6 +134,11 @@ body {
     width: 80%; 
     max-width: 600px; 
     border-radius: 10px; 
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 
 .close-button {
@@ -162,4 +175,8 @@ details {
         width: 100%; 
         margin: 0;
     }  
+    .modal-content {
+        width: 90%; 
+        max-width: none; 
+    }
 }
