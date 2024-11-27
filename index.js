@@ -20,30 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Обработчик для добавления контакта
-    const addContactLink = document.getElementById('addContactLink');
-    if (addContactLink) {
-        addContactLink.addEventListener('click', function(event) {
-            event.preventDefault(); 
+    const contacts = [
+        {
+            name: "Алина Бекер",
+            phone: "748293944",
+            email: "ydydtakd@maulmr"
+        },
+    ];
 
-            const name = "Алина Бекер"; 
-            const phone = "+79277081314";
-            const email = "aba@beker-partners.ru"; 
+    document.getElementById('exportVCard').addEventListener('click', function() {
+        const vCard = new VCard();
 
-            const vCardData = `
-BEGIN:VCARD
-VERSION:3.0
-FN:${encodeURIComponent(name)}
-TEL:${encodeURIComponent(phone)}
-EMAIL:${encodeURIComponent(email)}
-END:VCARD
-`.trim();
-
-            console.log(vCardData); 
-
-            const vCardUrl = `data:text/vcard;charset=utf-8,${encodeURIComponent(vCardData)}`;
-
-            window.open(vCardUrl);
+        contacts.forEach(contact => {
+            vCard.addName(contact.name);
+            vCard.addTelephone(contact.phone);
+            vCard.addEmail(contact.email);
         });
-    }
+
+        const vCardData = vCard.toString();
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'contacts.vcf';
+        link.click();
+    });
 });
