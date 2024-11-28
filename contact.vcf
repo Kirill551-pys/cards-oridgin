@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 BEGIN:VCARD
 VERSION:3.0
 FN:Алина Бекер
-ORG:Бекер Партнер
-TEL;TYPE=CELL:+79277081314
-=======
-BEGIN:VCARD
-VERSION:3.0
-FN:Алина Бекер
-ORG:Бекер Партнер
-TEL;TYPE=CELL:+79277081314
->>>>>>> 269c51bc77020816c5fe2bd8575aa0cbbf40ad7e
+N:Бекер;Алина;;;
+EMAIL:aba@beker-partners.ru
+TEL;TYPE=CELL:+7 (927) 708-13-14
 END:VCARD

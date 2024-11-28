@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Электронная визитка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vcard-creator@1.0.0/dist/vcard-creator.min.js"></script>
 </head>
 <body class="body-container">
     <header class="header-selection">
@@ -14,9 +15,8 @@
         </div>
         <div class="vcard">
             <i class="fas fa-user-plus" style="margin-right: 1px; font-size: 12px;"></i>
-            <a href="contact.vcf"
-            style="text-decoration: none; padding: 12px; font-size: 12px; margin: 0;  color: inherit"> 
-    Добавить в контакты    
+            <a href="contact.vcf" download="contact.vcf" class="add-contact-link"> 
+                Добавить в контакты    
             </a>
         </div>
     </header>
@@ -31,26 +31,26 @@
         </div>
         <div class="contact-container">
             <div class="contact-block">
-                <i class= "fas fa-phone-alt"></i>
                 <a href="tel:+79277081314" class="contact-link">
+                    <i class= "fas fa-phone-alt"></i>
                     <span>Телефон</span>
                 </a>
             </div>
             <div class="contact-block">
-                <i class= "fas fa-envelope"></i>
                 <a href="mailto:aba@beker-partners.ru" class="contact-link">
+                    <i class= "fas fa-envelope"></i>
                     <span>Почта</span>
                 </a>
             </div>
             <div class="contact-block">
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/79277081314" class="contact-link" target="_blank">
+                <a href="https://wa.me/79277081314" class="contact-link" target="_blank"  rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
                     <span>WhatsApp</span>
                 </a>
             </div>
             <div class="contact-block">
-                <i class="fa-brands fa-telegram"></i>
-                <a href="https://t.me/a_beker" class="contact-link" target="_blank">
+                <a href="https://t.me/a_beker" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram"></i>
                     <span>Telegram</span>
                 </a>
             </div>
