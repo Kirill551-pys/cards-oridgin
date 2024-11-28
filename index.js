@@ -1,3 +1,8 @@
+function openVCard(event) {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+    window.open('contact.vcf', '_blank');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const servicesTitle = document.querySelector('.services-title');
     const servicesModal = document.getElementById('servicesModal');
